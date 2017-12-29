@@ -46,6 +46,7 @@ var adalabers= [
 ];
 
 
+
 // Una función countAdalabers que devuelve el número de adalabers en el listado
 function countAdalabers(adalabers) {
   return adalabers.length
@@ -92,13 +93,13 @@ function countDesigners(adalabers) {
   var counter= 0;
 
   for (var i = 0; i < adalabers.length; i++) {
-    currentPerson += adalabers[i].job;
+    currentPerson = adalabers[i].job;
   }
 
 if (currentPerson === "diseñadora") {
   counter= counter+1;
-
 }
+
 return counter;
 };
 
