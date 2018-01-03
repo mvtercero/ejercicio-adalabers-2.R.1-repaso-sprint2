@@ -94,11 +94,10 @@ function countDesigners(adalabers) {
 
   for (var i = 0; i < adalabers.length; i++) {
     currentPerson = adalabers[i].job;
+    if (currentPerson === "diseñadora") {
+      counter= counter+1;
+    }
   }
-
-if (currentPerson === "diseñadora") {
-  counter= counter+1;
-}
 
 return counter;
 };
